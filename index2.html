@@ -8,10 +8,10 @@
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
 
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/bootstrap-3.3.1.min.css" rel="stylesheet" />
     <link href="css/gsdk-base.css" rel="stylesheet" />
 
-    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css" rel="stylesheet">
 
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -21,13 +21,11 @@
 
         ga('create', 'UA-25184331-6', 'auto');
         ga('send', 'pageview');
-
     </script>
 </head>
 
 <body>
-<div class="image-container set-full-height" style="background-image: url('images/wizard-city.jpg')">
-    <!--   Creative Tim Branding   -->
+<div class="image-container set-full-height" style="background-image: url('images/tedengler_flickr_cc_art_hill_summer.jpg')">
     <a href="https://nick.semenkovich.com/">
         <div class="logo-container">
             <div class="logo">
@@ -67,7 +65,7 @@
                                 <div class="tab-pane" id="location">
                                     <div class="row">
                                         <div class="col-sm-12">
-                                            <h4 class="info-text"> Let's start with the basic details</h4>
+                                            <h4 class="info-text"> Let's start with the basics</h4>
                                         </div>
                                         <div class="col-sm-5 col-sm-offset-1">
                                             <div class="form-group">
@@ -120,30 +118,30 @@
                                 <div class="tab-pane" id="type">
                                     <h4 class="info-text">What should happen to forged mail? </h4>
                                     <div class="row">
-                                        <div class="col-sm-12">
+                                        <div class="col-sm-10 col-sm-offset-1">
                                             <div class="col-sm-4">
                                                 <div class="choice" data-toggle="wizard-radio" rel="tooltip" title="Select this option if you're just testing DMARC. This won't change your current mail delivery.">
-                                                    <input type="radio" name="type" value="House">
+                                                    <input type="radio" name="type" value="none">
                                                     <div class="icon">
-                                                        <i class="fa fa-home"></i>
+                                                        <i class="fa fa-warning"></i>
                                                     </div>
-                                                    <h6>Nothing (Report Only)</h6>
+                                                    <h6>Nothing<br>(Report Only)</h6>
                                                 </div>
                                             </div>
                                             <div class="col-sm-4">
                                                 <div class="choice" data-toggle="wizard-radio" rel="tooltip" title="This is a flexible option, but it leaves users at risk. Your goal should be to move to p=reject.">
-                                                    <input type="radio" name="type" value="Appartment">
+                                                    <input type="radio" name="type" value="quarantine">
                                                     <div class="icon">
-                                                        <i class="fa fa-building"></i>
+                                                        <i class="fa fa-inbox"></i>
                                                     </div>
                                                     <h6>Quarantine</h6>
                                                 </div>
                                             </div>
                                             <div class="col-sm-4">
                                                 <div class="choice" data-toggle="wizard-radio" rel="tooltip" title="This is the most secure option, adopted by PayPal, AOL, Yahoo, and many others.">
-                                                    <input type="radio" name="type" value="Appartment">
+                                                    <input type="radio" name="type" value="reject">
                                                     <div class="icon">
-                                                        <i class="fa fa-building"></i>
+                                                        <i class="fa fa-lock"></i>
                                                     </div>
                                                     <h6>Reject</h6>
                                                 </div>
@@ -238,7 +236,7 @@
 
     <div class="footer">
         <div class="container">
-            Made in St. Louis <i class="fa fa-heart heart"></i> by <a href="http://www.creative-tim.com">Creative Tim</a>. DMARC record generator is open source at <a href="https://github.com/semenko/dmarcwizard">GitHub.</a>
+            Made in St. Louis <i class="fa fa-heart heart"></i> by <a href="https://nick.semenkovich.com">Nick Semenkovich</a>
         </div>
     </div>
 
@@ -267,7 +265,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="http://ct-freebies.herokuapp.com/wizard-components" target="_blank" class="btn btn-default btn-fill">How to use</a>
+                    <a href="https://github.com/semenko/dmarcwizard" target="_blank" class="btn btn-default btn-fill">Open Source at GitHub</a>
                 </li>
                 <li>
                     <a href="http://www.creative-tim.com/product/wizard" target="_blank" class="btn btn-info btn-fill">Download, it's free!</a>
